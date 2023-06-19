@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import CourseGoalItem from '../CourseGoalItem/CourseGoalItem';
-import './CourseGoalList.css';
+import CourseGoalItem from "../CourseGoalItem/CourseGoalItem";
+import "./CourseGoalList.css";
 
-const CourseGoalList = props => {
+const CourseGoalList = (props) => {
   return (
     <ul className="goal-list">
-      {props.items.map(goal => (
+      {/* Loops through the goal list and puts out each item */}
+      {props.items.map((goal) => (
+        // Calls CourseGoalItem component and passed attributes down
         <CourseGoalItem
           key={goal.id}
           id={goal.id}

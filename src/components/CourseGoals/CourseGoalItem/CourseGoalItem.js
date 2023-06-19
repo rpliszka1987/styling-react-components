@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './CourseGoalItem.css';
+import "./CourseGoalItem.css";
 
-const CourseGoalItem = props => {
+const CourseGoalItem = (props) => {
   // const [deleteText, setDeleteText] = useState('');
 
   const deleteHandler = () => {
@@ -11,6 +11,7 @@ const CourseGoalItem = props => {
   };
 
   return (
+    // When item is clicked triggers delete function
     <li className="goal-item" onClick={deleteHandler}>
       {props.children}
     </li>
